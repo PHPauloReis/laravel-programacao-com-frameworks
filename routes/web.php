@@ -16,4 +16,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [VeiculoController::class, 'index']);
 
-Route::resource('/veiculos', VeiculoController::class);
+Route::resource('/vehicles', VeiculoController::class)
+    ->names('veiculos')
+    ->parameters(['vehicles' => 'veiculo']);;
