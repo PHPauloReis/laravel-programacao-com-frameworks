@@ -23,7 +23,7 @@
             <td>{{ $veiculo->fabricante }}</td>
             <td>{{ $veiculo->ano_fabricacao }}</td>
             <td>{{ $veiculo->ano_modelo }}</td>
-            <td>{{ $veiculo->disponivel_em->format('d/m/Y') }}</td>
+            <td>{{ $veiculo->disponivel_em }}</td>
         </tr>
 
         @endforeach
